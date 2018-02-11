@@ -1,17 +1,18 @@
 
-p {
-  color: #000000;
-  font-family: Arial;
+body{
+  background-color: #c5d5db;
 }
 
+
 h1 {
-  font-family: Arial;
+  font-family: 'Shrikhand';
+  font-size: 3em
 }
 
 #container{
   width: 95%;
   margin: 0 auto;
-  font-family: Arial;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 
@@ -35,7 +36,8 @@ text-decoration: none;
     text-align: center;
     text-decoration: none;
     padding: 4px;
-    font-family: Arial;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2em
 }
 
 #nav a:hover, a:active{
@@ -46,4 +48,23 @@ text-decoration: none;
 
 img{
   border: none;
+}
+
+p{
+  color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+}
+
+#extra{
+  font-family: 'Josefin Slab', serif;
+}
+
+#footer {
+  color: #2d5f73;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
+  padding: 4px;
+  text-align: left;
 }
