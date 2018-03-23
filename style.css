@@ -9,26 +9,29 @@ h1 {
   font-size: 3em
 }
 
-#container{
+h2{
+  font-family: 'Nanum Gothic';
+}
+
+.navigation{
   width: 95%;
-  margin: 0 auto;
+  margin: 1;
+  padding: 1;
   font-family: 'Nanum Gothic', sans-serif;
+  flex-flow: column;
+  list-style-type: none;
 }
 
 
-#nav {
-  padding: 0;
-list-style-type: none;
-}
-
-#nav li {
-  margin: 0;
+#nav_bar li {
+  margin: 1;
   padding: 0;
 border-bottom: 1px solid #ccc;
 text-decoration: none;
+flex-flow: column;
 }
 
-#nav a:link, a:visited {
+#nav_bar a:link, a:visited {
   display:block;
     color: #ffffff;
     background-color: #5a5596;
@@ -40,15 +43,28 @@ text-decoration: none;
     font-size: 1.2em
 }
 
-#nav a:hover, a:active{
+#nav_bar a:hover, a:active{
   background-color: #302e51;
 }
 
-
+@media (min-width: 500px) {
+  .navigation {
+    flex-flow: row;
+    justify-content: flex-end;
+  }
 
 img{
-  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
+
+.wrapper{
+display: flex;
+flex-flow: row-wrap;
+}
+
 
 p{
   color: #000000;
@@ -57,7 +73,7 @@ p{
 }
 
 #extra{
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Nanum Gothic', serif;
 }
 
 #footer {
